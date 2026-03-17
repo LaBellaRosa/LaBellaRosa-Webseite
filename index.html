@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaBellaRosa</title>
+    <style>
+        /* Grundlayout */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #fff0f5;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #DAA520;
+        }
+        header h1 {
+            color: #DAA520; /* Goldrosa */
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #b7410e;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #DAA520;
+        }
+
+        /* Hauptbereich */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #b7410e;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Boxen für Inhalte */
+        .box {
+            background-color: #fff8f0;
+            padding: 20px;
+            border-left: 5px solid #DAA520;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /* Kontaktformular */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #DAA520;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background-color: #b7410e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 25px 20px;
+            border-top: 2px solid #DAA520;
+        }
+        footer small {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav a { display: block; margin: 8px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LaBellaRosa</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#impressum">Impressum</a>
+            <a href="#datenschutz">Datenschutz</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="box">
+                <h2>Willkommen bei LaBellaRosa</h2>
+                <p>Ihre Adresse für exklusive Produkte. Entdecken Sie unsere Auswahl und erleben Sie erstklassigen Service.</p>
+            </div>
+        </section>
+
+        <section id="impressum">
+            <div class="box">
+                <h2>Impressum</h2>
+                <p><strong>Firmenname:</strong> LaBellaRosa<br>
+                   <strong>Geschäftsführer / Verantwortlicher für Inhalte:</strong> Zino Tsereteli<br>
+                   <strong>Adresse:</strong> Nürnberger Straße 13b, 90602 Pyrbaum, Deutschland<br>
+                   <strong>E-Mail:</strong> <a href="mailto:support@la-bella-rosa.com">support@la-bella-rosa.com</a><br>
+                   <strong>Umsatzsteuer-ID:</strong> DE460554241<br>
+                   <strong>Steuernummer:</strong> 235/281/70870<br>
+                   <strong>Haftungsausschluss:</strong> Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.</p>
+            </div>
+        </section>
+
+        <section id="datenschutz">
+            <div class="box">
+                <h2>Datenschutzerklärung</h2>
+                <p>Wir nehmen den Schutz Ihrer personenbezogenen Daten ernst. Ihre Daten werden nur zur Bearbeitung Ihrer Anfragen über das Kontaktformular oder per E-Mail verwendet. Eine Weitergabe an Dritte erfolgt nicht. Weitere Informationen erhalten Sie auf Anfrage unter <a href="mailto:support@la-bella-rosa.com">support@la-bella-rosa.com</a>.</p>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <div class="box">
+                <h2>Kontaktformular</h2>
+                <form action="mailto:support@la-bella-rosa.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" required>
+
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="E-Mail" required>
+
+                    <label for="nachricht">Nachricht:</label>
+                    <textarea id="nachricht" name="Nachricht" rows="5" required></textarea>
+
+                    <button type="submit">Absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LaBellaRosa</p>
+        <small>Alle Rechte vorbehalten.</small>
+    </footer>
+</body>
+</html>
